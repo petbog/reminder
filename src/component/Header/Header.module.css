@@ -1,0 +1,29 @@
+.container {
+    width: 1230px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 81px;
+    align-items: center;
+}
+
+.lamp {
+    width: 70px;
+    height: 70px;
+}
+
+.title {
+    font-size: 23px;
+    font-weight: 500;
+    color: #767575;
+}
+
+.header {
+    border-bottom: 1px solid #d3d3d3;
+    -webkit-box-shadow: 0px 10px 15px 2px rgba(100, 106, 111, 0.2);
+    -moz-box-shadow: 0px 10px 15px 2px rgba(100, 106, 111, 0.2);
+    box-shadow: 0px 10px 15px 2px rgba(100, 106, 111, 0.2);
+    margin-bottom: 50px;
+}

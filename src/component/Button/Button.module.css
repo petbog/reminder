@@ -1,0 +1,99 @@
+
+.wrapper {
+    max-width: 450px;
+    margin: 200px auto 0 auto;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    width: auto;
+    font-family: Arial;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    height: 55px;
+    line-height: 55px;
+    font-size: 20px;
+    padding: 0 35px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: .5s all;
+}
+
+.btn::before {
+    display: block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #f3f36d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    transition: .3s all;
+    animation: toBottom 3s ease infinite;
+}
+
+.btn::after {
+    display: block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #f5e836;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: .3s all;
+    animation: toTop 3s ease infinite;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn:hover::before {
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+    animation: none;
+}
+
+.btn:hover::after {
+    width: 100%;
+    height: 100%;
+    animation: none;
+}
+
+@keyframes toBottom {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 40px;
+    }
+
+    100% {
+        top: 0;
+    }
+
+}
+
+@keyframes toTop {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 40px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+
+}

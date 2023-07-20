@@ -1,0 +1,98 @@
+.inputBox {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+    position: relative;
+}
+
+.inputClose {
+    position: absolute;
+    top: 1px;
+    right: 6px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.pencil {
+    width: 24px;
+    position: absolute;
+    top: 9px;
+    left: 12px;
+}
+
+.inputItem {
+    width: 600px;
+    height: 40px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 19px;
+    padding: 0 50px 0 50px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxData {
+    margin-right: 50px;
+}
+
+
+.inputData {
+    width: 200px;
+    height: 30px;
+    background-color: #f5e836;
+    background-image: url('../../img//610129.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 97%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 6px;
+}
+
+.inputData::-webkit-calendar-picker-indicator{
+opacity: 0;
+cursor: pointer;
+}
+
+.inputTime {
+    width: 118px;
+    height: 30px;
+    background-color: #f5e836;
+    background-image: url('../../img//610129.png');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 97%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 6px;
+}
+
+.inputTime::-webkit-calendar-picker-indicator{
+opacity: 0;
+cursor: pointer;
+}
+.boxData{
+    display: flex;
+}
+.boxtime{
+    display: flex; 
+}
+.titleInput{
+    font-size: 17px;
+    margin: 7px 0 0 0;
+}
