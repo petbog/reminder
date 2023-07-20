@@ -96,3 +96,20 @@ cursor: pointer;
     font-size: 17px;
     margin: 7px 0 0 0;
 }
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupItem{
+    width: 500px;
+    height: 243px;
+    background-color: #b6b7a6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    color: #fff;
+}

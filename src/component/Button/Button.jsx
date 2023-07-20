@@ -1,9 +1,9 @@
 import s from './Button.module.css'
 
-const Button = ({title}) => {
+const Button = ({title,handleClick}) => {
     return (
         <div className={s.wrapper}>
-            <button className={s.btn}>{title}</button>
+            <button onClick={handleClick} className={s.btn}>{title}</button>
         </div>
     )
 }
