@@ -29,11 +29,19 @@ const Input = () => {
         setText('')
         setPopup(true)
     }
+    const closePopup=()=>{
+        setPopup(false)
+    }
+
+    const textInput=(e)=>{
+        setText(e.target.value)
+        setPopup(false)
+    }
     return (
         <div className={s.input}>
             <div className={s.inputBox}>
                 <img className={s.pencil} src={pencil} alt="pencil" />
-                <input value={text} onChange={(e) => { setText(e.target.value) }} className={s.inputItem} type="text" />
+                <input value={text} onChange={textInput} className={s.inputItem} type="text" />
                 {
                     text && <img onClick={closeClick} className={s.inputClose} src={close} alt='close' />
                 }
@@ -55,7 +63,8 @@ const Input = () => {
             {
                 popup &&
                 <div className={s.popup}>
-                    <div className={s.popupItem}>
+                    <div  className={s.popupItem}>
+                        <img onClick={closePopup} className={s.closePopup} src={close} alt="close" />
                     Reminder created
                     </div>
                 </div>

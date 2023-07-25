@@ -1,0 +1,77 @@
+.box {
+    border: 1px solid #ebdede;
+    border-radius: 5px;
+    min-height: 140px;
+    box-shadow: 18px 9px 27px 1px rgba(163, 149, 149, 0.75);
+    -webkit-box-shadow: 18px 9px 27px 1px rgba(163, 149, 149, 0.75);
+    -moz-box-shadow: 18px 9px 27px 1px rgba(163, 149, 149, 0.75);
+    margin: 0 0 60px 0
+}
+
+.text {
+    border: 1px solid #ebdede;
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 5px;
+    min-height: 39px;
+    padding: 0 8px;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    line-height: 20px;
+    box-shadow: 5px 5px 12px 2px rgba(143, 120, 120, 0.75);
+    -webkit-box-shadow: 5px 5px 12px 2px rgba(143, 120, 120, 0.75);
+    -moz-box-shadow: 5px 5px 12px 2px rgba(143, 120, 120, 0.75);
+}
+
+.timeBox {
+    display: flex;
+}
+
+.time {
+    margin: 0 20px;
+    padding: 5px 8px;
+    border: 1px solid #ebdede;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px 2px rgba(143, 120, 120, 0.75);
+    -webkit-box-shadow: 5px 5px 12px 2px rgba(143, 120, 120, 0.75);
+    -moz-box-shadow: 5px 5px 12px 2px rgba(143, 120, 120, 0.75);
+}
+
+.data {
+    margin: 0 20px;
+    padding: 5px 8px;
+    border: 1px solid #ebdede;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px 2px rgba(143, 120, 120, 0.75);
+    -webkit-box-shadow: 5px 5px 12px 2px rgba(143, 120, 120, 0.75);
+    -moz-box-shadow: 5px 5px 12px 2px rgba(143, 120, 120, 0.75);
+}
+
+.lastTime {
+    margin: 0 20px;
+    padding: 5px 8px;
+    border: 1px solid #ebdede;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px 2px rgba(143, 120, 120, 0.75);
+    -webkit-box-shadow: 5px 5px 12px 2px rgba(143, 120, 120, 0.75);
+    -moz-box-shadow: 5px 5px 12px 2px rgba(143, 120, 120, 0.75);
+}
+
+.edit {
+    width: 35px;
+    height: 35px;
+    margin: 0 18px 0 0;
+    cursor: pointer;
+}
+
+.diteils {
+    display: flex;
+    justify-content: space-between;
+    margin: 31px 0 0 0;
+}
+.close{
+    width: 40px;
+    height: 40px;
+    margin: 0 18px 0 0;
+    cursor: pointer;
+}

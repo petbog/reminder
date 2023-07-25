@@ -1,21 +1,28 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+const stateLocalStorage = JSON.parse(localStorage.getItem('reminder'))
+
 const initialState = {
-  item:[]
+  items: stateLocalStorage ? stateLocalStorage : []
 }
 
 export const reminderSlice = createSlice({
-    name: 'reminder',
-    initialState,
-    reducers: {
-      addReminder: (state, action) => {
-        state.item = [...state.item,action.payload]
-      },
+  name: 'reminder',
+  initialState,
+  reducers: {
+    addReminder: (state, action) => {
+      state.items = [...state.items, action.payload]
+      localStorage.setItem('reminder', JSON.stringify(state.items));
     },
-  })
-  
-  export const { addReminder } = reminderSlice.actions
-  
-  export default reminderSlice.reducer
-  
-  export const selectReminder = (state) => state.reminder
+    removeReminder(state,action){
+      state.items = state.items.filter((item)=> item.id !== action.payload)
+      localStorage.setItem('reminder', JSON.stringify(state.items))
+  }
+  },
+})
+
+export const { addReminder,removeReminder } = reminderSlice.actions
+
+export default reminderSlice.reducer
+
+export const selectReminder = (state) => state.reminder
