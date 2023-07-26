@@ -14,14 +14,17 @@ export const reminderSlice = createSlice({
       state.items = [...state.items, action.payload]
       localStorage.setItem('reminder', JSON.stringify(state.items));
     },
-    removeReminder(state,action){
-      state.items = state.items.filter((item)=> item.id !== action.payload)
+    removeReminder(state, action) {
+      state.items = state.items.filter((item) => item.id !== action.payload)
       localStorage.setItem('reminder', JSON.stringify(state.items))
-  }
+    }, newReminder(state, action) {
+      state.items = action.payload
+      localStorage.setItem('reminder', JSON.stringify(state.items));
+    }
   },
 })
 
-export const { addReminder,removeReminder } = reminderSlice.actions
+export const { addReminder, removeReminder,newReminder } = reminderSlice.actions
 
 export default reminderSlice.reducer
 
