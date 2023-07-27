@@ -1,5 +1,5 @@
 .container {
-    width: 1230px;
+    max-width: 1230px;
     padding: 0 15px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -54,12 +54,17 @@
     height: 12px;
     background-color: #222121;
     color: #fff;
-    position: absolute; 
-    top: -4px;
+    position: absolute;
+    top: -5px;
     right: -16px;
     border-radius: 16px;
     font-size: 10px;
-    padding: 0px 1px 3px 2px;
+    padding: 1px 2px 4px 2px;
     text-align: center;
     font-weight: 400;
+}
+@media(max-width:1248px){
+    .box{
+        margin-right: 20px;
+    }
 }

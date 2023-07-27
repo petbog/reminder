@@ -1,7 +1,7 @@
 import s from './input.module.css'
 import pencil from '../../img/pencil-svgrepo-com.svg'
 import close from '../../img/icons8-крестик-78.png'
-import { useState } from 'react'
+import {  useRef, useState } from 'react'
 import Button from '../Button/Button'
 import { useDispatch } from 'react-redux'
 import { addReminder } from '../../redux/Slice/reminderSlice'
@@ -29,14 +29,30 @@ const Input = () => {
         setText('')
         setPopup(true)
     }
-    const closePopup=()=>{
+    const closePopup = () => {
         setPopup(false)
     }
 
-    const textInput=(e)=>{
+    const textInput = (e) => {
         setText(e.target.value)
         setPopup(false)
     }
+
+    const poppup = useRef()
+
+    // useEffect(() => {
+    //     const handleClickOutsade = (event) => {
+    //         if (poppup.current && !event.composedPath().includes(poppup.current)) {
+    //             setPopup(false)
+    //         }
+    //     }
+    //     document.body.addEventListener('click', handleClickOutsade)
+
+    //     return () => {
+    //         document.body.removeEventListener('click', handleClickOutsade)
+    //     }
+    // }, [])
+
     return (
         <div className={s.input}>
             <div className={s.inputBox}>
@@ -62,10 +78,10 @@ const Input = () => {
             {text && <Button handleClick={handleClick} title={'Сохранить'} />}
             {
                 popup &&
-                <div className={s.popup}>
-                    <div  className={s.popupItem}>
+                <div ref={poppup} className={s.popup}>
+                    <div className={s.popupItem}>
                         <img onClick={closePopup} className={s.closePopup} src={close} alt="close" />
-                    Reminder created
+                        Reminder created
                     </div>
                 </div>
             }

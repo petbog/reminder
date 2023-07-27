@@ -10,7 +10,6 @@ const ReminderList = () => {
     const { items } = useSelector(selectReminder)
     const [newText, setNewText] = useState('')
 
-console.log(items)
     const handleText = (id) => {
         const updatedReminders = [...items].map((item) => {
             if (item.id === id) {
