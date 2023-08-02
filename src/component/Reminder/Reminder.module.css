@@ -179,7 +179,7 @@
         width:85%
     }
 }
-@media(max-width:436px){
+@media(max-width:437px){
     .reminderDetails{
         margin: 10px 0 0 0;
     }
@@ -190,6 +190,12 @@
         align-items: end;
         padding: 0 8px 0 0;
     }
+    .text{
+        width:87%
+    }
+}
+
+@media(max-width:389px){
     .time{
         font-size: 15px;
     }
@@ -199,8 +205,5 @@
     .lastTime{
         width: 217px;
         font-size: 15px;
-    }
-    .text{
-        width:80%
     }
 }
