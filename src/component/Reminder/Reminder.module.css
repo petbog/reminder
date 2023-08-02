@@ -70,17 +70,19 @@
     justify-content: space-between;
     margin: 31px 0 0 0;
 }
-.close{
+
+.close {
     width: 40px;
     height: 40px;
     margin: 0 18px 0 0;
     cursor: pointer;
 }
-.poppupBox{
+
+.poppupBox {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 400px;
     height: 201px;
     background-color: #aba0a0;
@@ -90,7 +92,8 @@
     align-items: center;
     flex-direction: column;
 }
-.poppup{
+
+.poppup {
     width: 217px;
     min-height: 28px;
     outline: none;
@@ -101,28 +104,103 @@
     letter-spacing: 0.8px;
     margin: 36px 0 36px;
 }
-.title{
+
+.title {
     font-size: 20px;
     font-weight: 600;
 }
-.button{
+
+.button {
     padding: 6px 20px;
     font-size: 15px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
 }
-.button:hover{
+
+.button:hover {
     outline: 1px solid black;
 }
-.inputBox{
+
+.inputBox {
     position: relative;
 }
-.closeBlack{
+
+.closeBlack {
     position: absolute;
     right: 0;
     top: 36px;
     width: 30px;
     height: 30px;
     cursor: pointer;
+}
+
+@media(max-width:702px) {
+    .diteils {
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+
+    .reminderDetails {
+        margin: 20px 0 7px 0;
+    }
+    .text{
+        width:90%
+    }
+}
+
+@media(max-width:591px) {
+    .reminderDetails {
+        margin: 20px 0 7px 0;
+    }
+    .timeBox{
+        flex-direction: column;
+        padding: 0 0 0 8px;
+    }
+    .time{
+        margin: 0 0 20px 0;
+        width: 46px;
+    }
+    .data{
+        margin: 0 0 20px 0;
+        width: 85px;
+    }
+    .lastTime{
+        margin: 0 0 20px 0;
+        width: 271px;
+    }
+    .diteils {
+        justify-content: space-between;
+    }
+    .reminderDetails{
+        margin: 57px 0 0 0;
+    }
+    .text{
+        width:85%
+    }
+}
+@media(max-width:436px){
+    .reminderDetails{
+        margin: 10px 0 0 0;
+    }
+    .diteils {
+        justify-content: end;
+    }
+    .timeBox{
+        align-items: end;
+        padding: 0 8px 0 0;
+    }
+    .time{
+        font-size: 15px;
+    }
+    .data{
+        font-size: 15px;
+    }
+    .lastTime{
+        width: 217px;
+        font-size: 15px;
+    }
+    .text{
+        width:80%
+    }
 }

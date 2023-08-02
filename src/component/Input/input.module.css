@@ -34,6 +34,7 @@
 .data {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .boxData {
@@ -130,25 +131,38 @@
     transform: rotate(90deg);
 }
 
-/* @media(max-width:726px) {
-    .inputItem {
-        width: 359px;
+@media(max-width:700px) {
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .pencil {
-        left: 13px;
-    }
-    .inputClose {
-        right: 108px;
+    .boxtime{
+        margin-left: -116px;
+        margin-top: 39px;
     }
 }
-@media(max-width:474px) {
-    .inputItem {
-        width: 200px;
+@media(max-width:434px) {
+    .titleInput{
+        font-size: 14px;
     }
-    .pencil {
-        left: 13px;
+    .inputData{
+        width: 153px;
+        margin-left: 9px;
     }
-    .inputClose {
-        right: 9px;
+    .inputTime{
+        width: 91px;
+        margin-left: 9px; 
     }
-} */
+    .boxData {
+        margin-right: 0;
+    }
+    .boxtime{
+        margin-left: 0px;
+        margin-top: 39px;
+    }
+    .popupItem{
+            font-size: 24px;
+    }
+}

@@ -63,7 +63,7 @@ const Reminder = ({ text, data, time, id, handleText, newText, setNewText }) => 
                         {data && <div className={s.data}>{data}</div>}
                         {!isNaN(countdown.split(' ')[0]) ? <div className={s.lastTime}>{countdown}</div> : ''}
                     </div>
-                    <div className="">
+                    <div className={s.reminderDetails}>
                         <img onClick={openPopup} className={s.edit} src={edit} alt="edit" />
                         <img onClick={() => deleteReminder(id)} className={s.close} src={close} alt="close" />
                         {
